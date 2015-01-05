@@ -27,3 +27,7 @@ entries with each session save.
 (def app
   (wrap-session handler {:store (arangodb-store context false)})
 ```
+
+Third, enjoy your new session store. Keep in mind the rules about ArangoDB.
+Don't use :create-collection in a cluster setup; create the session collection
+before starting your system.
