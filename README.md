@@ -1,6 +1,9 @@
 # arango-session
 A Ring compatible session manager built on ArangoDB.
 
+## Installing
+Add the following dependency to your project.clj file: [arango-session "0.1.0"]
+
 ## Usage
 First define your ArangoDB context. In this example the collection will be
 made if it doesn't already exist.
